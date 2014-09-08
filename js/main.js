@@ -8,4 +8,11 @@ $(document).ready(function() {
         $this.parent('.b-faq__questions__item').addClass('active');
     });
 
+    $('.b-solutions__slider').bxSlider({
+        mode: 'fade',
+        pager: false,
+        nextText: '',
+        prevText: '',
+    });
+
 });
