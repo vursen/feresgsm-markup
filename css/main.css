@@ -497,6 +497,9 @@ strong {
   margin: 0 0 110px;
   line-height: 1;
 }
+.b-map {
+  padding: 45px 0 0;
+}
 .b-order-form__heading {
   margin-bottom: 20px;
   padding-left: 55px;
@@ -537,8 +540,8 @@ strong {
   background-position: 18px -23px;
 }
 .b-reviews {
-  background: #f8f8f8;
   padding: 45px 0;
+  background: #f8f8f8;
   text-align: center;
 }
 .b-reviews__persons + .b-reviews__persons {
@@ -597,10 +600,70 @@ strong {
   padding: 50px 0 0;
   background: #f7f7f7 url("../img/b-scheme.jpg") no-repeat center bottom;
   background-size: cover;
+  color: #fff;
 }
 .b-scheme__main {
+  position: relative;
   height: 580px;
   background: url("../img/b-scheme__main.png") no-repeat bottom center;
+}
+.b-scheme__desc {
+  display: inline-block;
+  padding-bottom: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 3px solid #0ca9e3;
+}
+.b-scheme__desc:before {
+  content: '';
+  background: url("../img/b-scheme__desc.png") no-repeat;
+  width: 73px;
+  height: 12px;
+}
+.b-scheme__desc._base-station {
+  position: absolute;
+  top: 120px;
+  left: 170px;
+}
+.b-scheme__desc._base-station:before {
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  transform: rotate(-30deg);
+}
+.b-scheme__desc._external-antenna {
+  position: absolute;
+  top: 0;
+  left: 505px;
+}
+.b-scheme__desc._external-antenna:before {
+  position: absolute;
+  top: 30px;
+  right: -85px;
+  transform: rotate(210deg);
+}
+.b-scheme__desc._internal-antenna {
+  position: absolute;
+  top: 420px;
+  right: 65px;
+}
+.b-scheme__desc._internal-antenna:before {
+  position: absolute;
+  bottom: -35px;
+  left: 45px;
+  transform: rotate(-25deg);
+}
+.b-scheme__desc._repeater {
+  position: absolute;
+  top: 110px;
+  right: 205px;
+}
+.b-scheme__desc._repeater:before {
+  position: absolute;
+  top: 30px;
+  left: -75px;
+  transform: rotate(-35deg);
 }
 .b-solutions {
   padding: 50px 0 80px;
@@ -716,7 +779,7 @@ strong {
   right: 630px;
 }
 .b-steps {
-  padding: 50px 0;
+  padding: 45px 0;
   background: #f7f7f7 url("../img/b-steps.jpg") no-repeat center bottom;
   background-size: cover;
   color: #fff;
