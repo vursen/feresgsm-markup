@@ -1,4 +1,4 @@
-<!DOCTYPE html 5><!--[if IE]> <html lang="ru" class="ie"> <![endif]-->
+<!DOCTYPE html 5><!--[if lt IE 9]> <html lang="ru" class="ie"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="ru"><!--<![endif]-->
   <head>
@@ -18,9 +18,9 @@
       <div class="b-top-line b-header__top">
         <div class="container">
           <ul class="b-top-line__menu">
-            <li class="b-top-line__menu__item active"><a href="#">Начало</a></li>
+            <li class="b-top-line__menu__item"><a href="#">Начало</a></li>
             <li class="b-top-line__menu__item"><a href="#">Услуги</a></li>
-            <li class="b-top-line__menu__item"><a href="#">О компании</a></li>
+            <li class="b-top-line__menu__item active"><a href="#">О компании</a></li>
             <li class="b-top-line__menu__item"><a href="#">Вопросы</a></li>
             <li class="b-top-line__menu__item"><a href="#">Гарантии</a></li>
             <li class="b-top-line__menu__item"><a href="#">Отзывы</a></li>
@@ -35,12 +35,14 @@
         <div class="container">
           <div class="b-header__logo"><strong>Feres</strong>gsm.ru<small>Усиление сигнала сотовой связи</small></div>
           <div class="b-header__heading">Усиление сигнала <br/>сотовой связи GSM/3G/4G</div>
-          <form action="/" method="post" class="b-order-form b-header__order-form">
-            <div class="b-order-form__heading">Оставьте заявку сегодня и получите <strong>бесплатный выезд на замер</strong></div>
-            <input name="name" placeholder="Ваше имя:" class="form-input _icon _icon_name"/>
-            <input name="phone" placeholder="Ваш телефон:" class="form-input _icon _icon_phone"/>
-            <button type="submit" class="btn _order b-order-form__btn">Оставить заявку</button>
-          </form>
+          <div class="b-order-form b-header__order-form">
+            <form action="/" method="post" class="b-order-form__wrapper">
+              <div class="b-order-form__heading">Оставьте заявку сегодня и получите <strong>бесплатный выезд на замер</strong></div>
+              <input name="name" placeholder="Ваше имя:" class="form-input _name"/>
+              <input name="phone" placeholder="Ваш телефон:" class="form-input _phone"/>
+              <button type="submit" class="btn _order b-order-form__btn">Оставить заявку</button>
+            </form>
+          </div>
         </div>
       </div>
     </header>
@@ -373,10 +375,23 @@
         </div>
       </div>
     </section>
+    <!-- === Order form ========================================================================-->
+    <section class="b-order-form _bg">
+      <div class="container">
+        <form action="/" method="post" class="b-order-form__wrapper">
+          <div class="b-order-form__heading">Оставьте заявку сегодня и получите <strong>бесплатный выезд на замер</strong></div>
+          <input name="name" placeholder="Ваше имя:" class="form-input _name"/>
+          <input name="phone" placeholder="Ваш телефон:" class="form-input _phone"/>
+          <button type="submit" class="btn _order b-order-form__btn">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
     <!-- === Map =============================================================================== -->
     <section class="b-map">
       <div class="container">
         <h2 class="section-heading _dark">Как нас найти</h2>
+      </div>
+      <div class="b-map__wrapper">
       </div>
     </section>
     <!-- ==== Footer =========================================================================== -->
@@ -403,6 +418,7 @@
     <!-- === Scripts =========================================================================== -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/jquery.bxslider.min.js"></script>
+    <script src="js/vendor/jquery.placeholder.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
