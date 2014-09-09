@@ -311,7 +311,7 @@ strong {
   display: inline-block;
 }
 .b-advantages {
-  padding: 55px 0 150px;
+  padding: 55px 0;
 }
 .b-advantages:before,
 .b-advantages:after {
