@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('.b-faq__questions__item')
             .removeClass('active')
             .find('.b-faq__answer')
-            .hide();
+            .slideUp(300);
 
         $this
             .parent('.b-faq__questions__item')
