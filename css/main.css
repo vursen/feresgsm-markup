@@ -218,6 +218,13 @@ strong {
 .container:after {
   clear: both;
 }
+.height-transition {
+  transition: max-height 0.5s ease-in-out;
+  overflow-y: hidden;
+}
+.height-transition-hidden {
+  max-height: 0;
+}
 .btn {
   display: inline-block;
   outline: none;
@@ -396,9 +403,6 @@ strong {
 }
 .b-faq__questions__item.active .b-faq__question:before {
   background: #252525;
-}
-.b-faq__questions__item.active .b-faq__answer {
-  display: block;
 }
 .b-faq__question {
   display: inline-block;
